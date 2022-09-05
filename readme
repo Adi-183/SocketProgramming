@@ -1,0 +1,15 @@
+Read me file
+Made by Group3- Aditya Patel
+		Abhishek Kumar
+		Abhinav Kumar Choudhary
+		Adarsh Malviya
+Application #3: Base64 encoding system using Client-Server socket programming
+The submission includes 3 files: Server.c, Client.c, Readme
+How to run:
+Open first terminal and run: gcc -o s Server.c
+run: ./s 8000 (Any valid port number can be provided)
+Open another terminal and run: gcc -o c Client.c
+run: ./c 127.0.0.1 8000
+Now if you type a message it will get encoded then sent to Server using tcp and it will be printed by server(original and decoded messages) then server sends a acknowledgement message to client and client prints it.
+If client wants to close the communication it can type "Bye", this will send a type 3 message to server indicating it to close the connection.
+The server is concurrent server i.e. it can service multiple clients at once.
